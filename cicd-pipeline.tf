@@ -96,9 +96,9 @@ resource "aws_codepipeline" "cicd_pipeline" {
   }
 
   stage {
-    name = "Deploy"
+    name = "Apply"
     action {
-      name            = "Deploy"
+      name            = "Apply"
       category        = "Build"
       provider        = "CodeBuild"
       version         = "1"
